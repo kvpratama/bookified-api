@@ -324,4 +324,169 @@ These positional encodings are the same size as the word embeddings so that the 
             "external_id": "id_20",
         },
     },
+    {
+        "inputs": {
+            "question": "According to the provided text, what is a primary reason that approximately 85% of AI projects fail to reach production?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "A primary reason that approximately **85% of AI projects fail** to reach production is **vague or shifting objectives**. \n\nAccording to the sources, these failures often stem from a **lack of precise problem definition** at the start of a project. Without a clearly articulated problem, AI teams risk building systems that **do not align with business needs**, leading to misdirected efforts and wasted resources. \n\nThe sources emphasize that clear problem definition is the foundation for determining necessary data, appropriate models, and success metrics. Without this clarity, teams may spend months on iterations that ultimately deliver no measurable business impact."
+        },
+        "metadata": {"external_id": "id_21"},
+    },
+    {
+        "inputs": {
+            "question": "Anthropic's Claude models are distinguished in the AI landscape primarily by which of the following frameworks?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "Anthropic's Claude models are distinguished primarily by the **constitutional AI** framework. \n\nAccording to the sources, this framework is a defining feature of Anthropic's approach, designed to **instill safety and ethical considerations** directly into the model's reasoning process."
+        },
+        "metadata": {"external_id": "id_22"},
+    },
+    {
+        "inputs": {
+            "question": "In the context of data strategy, why is a well-curated dataset of one million samples considered more valuable than ten million noisy samples?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": 'A well-curated dataset of one million samples is more valuable because **data quality and relevance ultimately determine model performance** more than sheer volume.\n\nAccording to the sources, the primary reasons for this include:\n\n*   **Reliability of Insights:** AI models derive intelligence from patterns in the data they are trained on. If a dataset is "noisy" (filled with irrelevant, biased, or poorly labeled samples), even the most advanced model will produce **unreliable or misleading results**.\n*   **Generalization:** High-quality, representative samples allow a model to **generalize to real-world scenarios**. Conversely, noisy data can lead to misdiagnoses or failure when the model encounters unseen patterns.\n*   **Algorithmic Efficiency:** Experienced practitioners find that a **simpler model trained on high-quality data** often outperforms a cutting-edge model trained on noisy or incomplete data.\n*   **Garbage In, Garbage Out:** No matter how sophisticated a neural network is, its output is only as good as the "fuel" (data) it processes; unrefined fuel can "clog the system" and cause outright failure.\n\nThe goal of a robust data strategy is not to accumulate the most data possible, but to collect the **right data** for the specific problem at hand.'
+        },
+        "metadata": {"external_id": "id_23"},
+    },
+    {
+        "inputs": {
+            "question": "What role does 'Synthetic Data' play in modern AI engineering strategy?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": 'In modern AI engineering strategy, **synthetic data** serves as an increasingly vital alternative when real-world data is **scarce, sensitive, or biased**. It is artificially generated information that maintains the statistical properties of real-world distributions.\n\nAccording to the sources, its primary roles include:\n\n*   **Addressing Privacy Concerns:** In fields like computer vision, synthetic images are used to train facial recognition models without relying on actual human photos, helping to navigate strict privacy regulations.\n*   **Balancing Imbalanced Datasets:** In applications such as fraud detection—where genuine fraud cases are rare—synthetic data is used to "balance" the dataset so the model can learn to recognize rare patterns effectively.\n*   **Mitigating Bias:** Synthetic data can be used for **data augmentation** to artificially increase the diversity of a training set, helping models generalize better across different demographics or conditions.\n*   **Continuous Enrichment:** A robust data strategy incorporates synthetic data generation to continuously improve model performance and ensure systems remain relevant as real-world environments shift.\n\n**A Critical Caveat:**\nThe sources warn that synthetic data must be **carefully designed** to accurately reflect real-world conditions. If it fails to do so, the model may learn patterns that do not generalize beyond the synthetic environment, leading to failure in production.'
+        },
+        "metadata": {"external_id": "id_24"},
+    },
+    {
+        "inputs": {
+            "question": "Why might 'Data Drift' cause a recommendation engine trained on 2019 data to fail in 2025?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "**Data drift** would cause a recommendation engine trained in 2019 to fail by 2025 because it creates a fundamental mismatch between the historical patterns the model learned and the current data it encounters in production.\n\nAccording to the sources, this failure occurs for several reasons:\n\n*   **Shift in Consumer Habits:** Real-world data is not static; consumer preferences and behaviors evolve significantly over time. A model trained on 2019 data would reflect **pre-pandemic** shopping behavior, which is often irrelevant in a **post-pandemic** world where habits have fundamentally shifted.\n*   **Statistical Distribution Changes:** Data drift specifically refers to changes in the statistical distribution of input features. By 2025, the features the model uses to make recommendations—such as user demographics, popular product categories, or seasonal trends—will likely no longer match the 2019 distribution.\n*   **Model Obsolescence:** Because AI systems derive intelligence from patterns in the data they are trained on, they become **fragile and unreliable** if they cannot adapt to these changing conditions.\n*   **Silent Performance Degradation:** Drift is often a gradual process that leads to unreliable predictions, causing the engine to suggest irrelevant products, which ultimately reduces user engagement and business value.\n\nTo remain effective, the sources emphasize that AI systems require **continuous monitoring** and **periodic retraining** on fresh data to stay aligned with the current environment."
+        },
+        "metadata": {"external_id": "id_25"},
+    },
+    {
+        "inputs": {
+            "question": "When building a data pipeline, why is 'Archival Policy' mentioned as a critical part of a robust strategy?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": 'An **archival policy** is a critical part of a robust data strategy because it enables organizations to **balance storage efficiency with data accessibility**.\n\nAccording to the sources, a well-defined archival policy is essential for the following reasons:\n\n*   **Cost Management:** Storing every data point in high-resolution, high-performance databases is prohibitively expensive as datasets scale. Archiving allows teams to move historical data to **cost-effective storage solutions**.\n*   **Performance Optimization:** By moving older, less frequently used data out of active databases, systems can maintain **high-speed retrieval** and processing times for the data that AI models need in real-time.\n*   **Overhead Reduction:** Archival policies ensure that AI models can retrieve relevant data quickly without the **unnecessary overhead** of searching through massive volumes of stagnant historical information.\n*   **Data Lifecycle Management:** It is a core component of managing the data lifecycle, ensuring that storage costs do not "balloon" as an organization accumulates video, image, or sensor data over time.'
+        },
+        "metadata": {"external_id": "id_26"},
+    },
+    {
+        "inputs": {
+            "question": "When optimizing a Retrieval-Augmented Generation (RAG) system, which similarity metric is most robust for comparing document relevance when there are significant differences in document length?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "When optimizing a Retrieval-Augmented Generation (RAG) system, **cosine similarity** is the most robust metric for comparing document relevance when there are significant differences in document length.\n\nAccording to the sources, the reasons for its robustness in this scenario include:\n*   **Measurement Basis:** Cosine similarity measures the **angle between vectors** rather than their absolute magnitude or distance.\n*   **Length Independence:** Because it focuses on the orientation of the vectors, it can effectively compare documents **regardless of length differences**, whereas metrics like Euclidean distance are more sensitive to the absolute positioning in vector space.\n*   **Semantic Focus:** By ignoring the magnitude (which often correlates with document length or word frequency), it focuses more purely on the **semantic relationship** between the query and the retrieved text.\n\nOther common metrics mentioned include **Euclidean distance**, which is better suited for scenarios where absolute positioning is critical, and **dot product scoring**, which is computationally efficient but generally requires normalized embeddings to be most effective for ranking."
+        },
+        "metadata": {"external_id": "id_27"},
+    },
+    {
+        "inputs": {
+            "question": "In the context of hybrid retrieval, what is the primary function of Reciprocal Rank Fusion (RRF)?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "In the context of hybrid retrieval, the primary function of **Reciprocal Rank Fusion (RRF)** is to **merge rankings** from both keyword-based (sparse) and semantic (dense) searches. \n\nAccording to the sources, its role is to ensure that **strong results from each retrieval method are combined effectively** into a single, unified list. This technique is particularly valuable for systems like chatbots and enterprise search engines, where achieving a balance between exact term matching and conceptual understanding is critical for accuracy."
+        },
+        "metadata": {"external_id": "id_28"},
+    },
+    {
+        "inputs": {
+            "question": "In Transformer-based architectures, what is the fundamental bottleneck when scaling to long sequence lengths?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "In Transformer-based architectures, the fundamental bottleneck when scaling to long sequence lengths is the **memory and computational cost** associated with the **self-attention mechanism**.\n\nThis bottleneck occurs because self-attention requires computing relationships between every token in an input sequence, resulting in **quadratic complexity** (O(n^2)) relative to the sequence length. This makes training and running models with long contexts exponentially more expensive. To mitigate this, techniques such as **sparse attention**—where tokens only attend to a subset of other tokens—are often employed."
+        },
+        "metadata": {"external_id": "id_29"},
+    },
+    {
+        "inputs": {
+            "question": "How should an AI system resolve discrepancies if it retrieves contradicting information from multiple authoritative sources?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": 'When an AI system retrieves contradicting information from multiple authoritative sources, it should follow a structured resolution process to maintain accuracy and trust:\n\n*   **Prioritize Authoritative Sources:** The system should be designed to rank sources by their level of authority and prioritize the information from the most credible or reliable ones.\n*   **Implement Confidence Thresholds:** Organizations should define "control points" where the AI takes autonomous action only when certainty is high. If a discrepancy causes the model\'s confidence to fall below a predefined threshold, the system should defer the decision.\n*   **Request Human Oversight:** When discrepancies cannot be resolved autonomously, the system must escalate the issue for human review. This is critical in high-stakes domains like law or medicine where nuance and intent are difficult for models to quantify.\n*   **Communicate Uncertainty Transparently:** Instead of presenting a single definitive answer, the AI should communicate its level of certainty to the user. It can provide a range of potential answers, offering supporting evidence and references for the contradicting viewpoints so the user can make an informed decision.\n\nBy incorporating these safeguards, the system ensures that it acts as an **enhancer of human expertise** rather than a source of potentially misleading or hallucinated information.'
+        },
+        "metadata": {"external_id": "id_30"},
+    },
+    {
+        "inputs": {
+            "question": "In a microservices-based AI architecture, what happens if the 'Recommendation Engine' service needs a model upgrade?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "In a microservices-based AI architecture, upgrading the **'Recommendation Engine'** service occurs independently and seamlessly due to the decoupled nature of the system. \n\nAccording to the sources, the following happens during a model upgrade:\n\n*   **Independent Replacement:** Because each AI function is encapsulated as a self-contained unit, the engine can be replaced with a more advanced model **without disrupting the entire pipeline**. \n*   **Seamless Integration:** The new service version continues to communicate via the same well-defined **API endpoints**, ensuring that upstream data (like user behavior tracking) and downstream processes (like ranking) remain unaffected.\n*   **Versioned Rollouts:** The new model is assigned a **unique version identifier** and can be deployed alongside the old version. This allows for **model routing**, where traffic is gradually shifted to the new version for validation.\n*   **Controlled Deployment:** Strategies such as **rolling updates** or **blue-green deployments** are used to phase out the old model while introducing the new one, ensuring zero downtime.\n*   **Fault Isolation:** If the upgrade introduces issues, the failure is **isolated** to that specific microservice, preventing a system-wide crash and allowing for an **automated rollback** to the previous stable version.\n\nIn summary, the microservices approach allows the recommendation engine to evolve and scale based on demand patterns without requiring major overhauls of the broader AI ecosystem."
+        },
+        "metadata": {"external_id": "id_31"},
+    },
+    {
+        "inputs": {
+            "question": "Why many tech projects not become real use?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "A primary reason that approximately **85% of AI projects fail** to reach production is **vague or shifting objectives**. \n\nAccording to the sources, these failures often stem from a **lack of precise problem definition** at the start of a project. Without a clearly articulated problem, AI teams risk building systems that **do not align with business needs**, leading to misdirected efforts and wasted resources. \n\nThe sources emphasize that clear problem definition is the foundation for determining necessary data, appropriate models, and success metrics. Without this clarity, teams may spend months on iterations that ultimately deliver no measurable business impact."
+        },
+        "metadata": {"external_id": "id_32"},
+    },
+    {
+        "inputs": {
+            "question": "What main problem when transformer model tries handle very long input?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "In Transformer-based architectures, the fundamental bottleneck when scaling to long sequence lengths is the **memory and computational cost** associated with the **self-attention mechanism**.\n\nThis bottleneck occurs because self-attention requires computing relationships between every token in an input sequence, resulting in **quadratic complexity** (O(n^2)) relative to the sequence length. This makes training and running models with long contexts exponentially more expensive. To mitigate this, techniques such as **sparse attention**—where tokens only attend to a subset of other tokens—are often employed."
+        },
+        "metadata": {"external_id": "id_33"},
+    },
+    {
+        "inputs": {
+            "question": "In hybrid search, what RRF mainly do with rankings?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "In the context of hybrid retrieval, the primary function of **Reciprocal Rank Fusion (RRF)** is to **merge rankings** from both keyword-based (sparse) and semantic (dense) searches. \n\nAccording to the sources, its role is to ensure that **strong results from each retrieval method are combined effectively** into a single, unified list. This technique is particularly valuable for systems like chatbots and enterprise search engines, where achieving a balance between exact term matching and conceptual understanding is critical for accuracy."
+        },
+        "metadata": {"external_id": "id_34"},
+    },
+    {
+        "inputs": {
+            "question": "Anthropic Claude models mostly use which framework to guide behavior?",
+            "document_id": "fec01e6f-e1c8-4e46-89d0-4f1a8ee6a86c",
+            "user_id": "f9937aab-6c97-4c3e-a6f8-38f4a1676200",
+        },
+        "outputs": {
+            "answer": "Anthropic's Claude models are distinguished primarily by the **constitutional AI** framework. \n\nAccording to the sources, this framework is a defining feature of Anthropic's approach, designed to **instill safety and ethical considerations** directly into the model's reasoning process."
+        },
+        "metadata": {"external_id": "id_35"},
+    },
 ]
